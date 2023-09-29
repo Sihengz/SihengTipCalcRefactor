@@ -20,6 +20,14 @@ public class TipCalculator {
         return tipPercentage;
     }
 
+    public ArrayList<String> getItems() {
+        return items;
+    }
+
+    public ArrayList<Double> getItemCosts() {
+        return itemCosts;
+    }
+
     public void addMeal(double cost, String meal) {
         totalBillBeforeTip += cost;
         itemCosts.add(cost);
@@ -50,4 +58,5 @@ public class TipCalculator {
         // returns the total cost per person
         return totalBill() /numPeople;
     }
+
 }

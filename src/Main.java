@@ -60,6 +60,8 @@ public class Main {
         System.out.println("Total cost per person: $" + decimalFormat.format(tipcalc.perPersonTotalCost()));
         System.out.println("____________________________");
         System.out.println("Items ordered: ");
+        ArrayList<String> items = tipcalc.getItems();
+        ArrayList<Double> itemCosts = tipcalc.getItemCosts();
         for (int i = 0; i < items.size(); i++) {
             System.out.println(items.get(i) + " : " + itemCosts.get(i) + "$");
 
